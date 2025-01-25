@@ -11,42 +11,40 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="css/style.css" />
-
+    <!-- Get access to Tailwind CSS using CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
 
     <link rel="icon" href="img/favicon.ico" sizes="any" />
   </head>
-  <body>
+  <body class="bg-gradient-to-tl to-gray-50 from-[#d2d6db] pt-[200px]">
+    <article
+      class="flex flex-col w-[340px] rounded-lg shadow p-6 bg-white gap-4 mx-auto"
+    >
+      <div class="flex items-center gap-4 h-[49px]">
+        <img
+          src="./img/profile-thumbnail.png"
+          alt="Testimonial Card"
+          class="h-full object-contain"
+        />
+        <div class="flex flex-col justify-between">
+          <span class="font-bold">Sarach Dole</span>
+          <span class="text-sm text-neutral-600">@sarahdolegit</span>
+        </div>
+      </div>
+      <p class="text-base text-neutral-600">
+        I've been searching for high-quality abstract images for my design
+        projects, and I'm thrilled to have found this platform. The variety and
+        depth of creativity are astounding!
+      </p>
+    </article>
 
-    <main class="h-[100vh] w-[100vw] mx-auto py-[200px] flex justify-center bg-gradient-to-tl to-gray-50 from-[#d2d6db]">
-      <article class="flex flex-col h-[233px] w-[340px] rounded-lg shadow p-6 bg-white gap-4">
-        <div class="flex items-center gap-4 h-[49px]">
-          <div class="h-full">
-            <img src="./img/profile-thumbnail.png" alt="Testimonial Card" class="h-full object-contain">
-          </div>
-          <div class="flex flex-col justify-between">
-            <div class="font-bold">
-              Sarach Dole
-            </div>
-            <div class="text-sm text-neutral-600">
-              @sarahdolegit
-            </div>
-          </div>
-        </div>
-        <div class="text-base text-neutral-600">
-          I've been searching for high-quality abstract images for my design
-          projects, and I'm thrilled to have found this platform. The variety
-          and depth of creativity are astounding!
-        </div>
-      </article>
-    </main>
     <!-- Sarah Dole
       @sarahdolegit
       I've been searching for high-quality abstract images for my design projects, 
       and I'm thrilled to have found this platform. The variety and depth of creativity are astounding! 
     -->
 
-    <div class="credits" data-gfe-screenshot-exclude="true">
+    <footer class="credits" data-gfe-screenshot-exclude="true">
       A challenge by
       <a
         href="https://www.greatfrontend.com/projects?ref=challenges"
@@ -58,7 +56,7 @@
         target="_blank"
         >Neeraj Singh</a
       >.
-    </div>
+    </footer>
     <script src="js/index.js"></script>
   </body>
 </html>
