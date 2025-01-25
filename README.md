@@ -5,6 +5,8 @@ Developed a card featuring a user testimonial, including a profile image, name, 
 - [Live Demo](https://testimonial-card869.netlify.app/)
 
 ## UI Snapshot
+![Testimonial Card](https://github.com/user-attachments/assets/3a5ba2c8-86af-4286-b7a0-e6b3d8b749a2)
+
 
 ## Contributing
 1. File an issue to notify about what you're working on (Optional, Mandatory only when working on big changes).
