@@ -15,25 +15,38 @@
     <script src="https://cdn.tailwindcss.com"></script>
 
     <link rel="icon" href="img/favicon.ico" sizes="any" />
+    <!-- For current project, testimonial card image is critical so load is as soon as possible -->
+    <link rel="preload" as="image" href="img/profile-thumbnail.png" />
   </head>
   <body class="bg-gradient-to-tl to-gray-50 from-[#d2d6db] pt-[200px]">
     <figure
       class="flex flex-col w-[340px] rounded-lg shadow p-6 bg-white gap-4 mx-auto"
     >
       <figcaption class="flex items-center gap-4 h-[49px]">
-        <img
-          src="./img/profile-thumbnail.png"
+        <!-- Use lazy loading when building major project since
+        there, testimonial cards usually comes at the bottom of the page -->
+        <!-- <img
+          src="img/profile-thumbnail.png"
           alt="Sarah Dole's profile picture"
           class="object-cover rounded-full"
           loading="lazy"
           width="48"
           height="48"
+        /> -->
+        <img
+          src="img/profile-thumbnail.png"
+          alt="Sarah Dole's profile picture"
+          class="object-cover rounded-full"
+          width="48"
+          height="48"
         />
         <div class="flex flex-col flex-1 overflow-hidden">
-          <h2 class="font-semibold text-lg truncate">
-            Sarah Dole
-          </h2>
-          <a href="" class="text-sm text-neutral-600 hover:text-neutral-700 truncate">@sarahdole</a>
+          <h2 class="font-semibold text-lg truncate">Sarah Dole</h2>
+          <a
+            href=""
+            class="text-sm text-neutral-600 hover:text-neutral-700 truncate"
+            >@sarahdole</a
+          >
         </div>
       </figcaption>
       <blockquote class="text-base text-neutral-600 line-clamp-[8]">
